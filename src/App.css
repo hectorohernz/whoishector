@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.main-app{
+    height: 100vh;
+    background: url('https://media.giphy.com/media/NPH7DsTIbfvz7mdVKT/giphy.gif') no-repeat center;
+    background-size: 600px 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-app h1{
+    font-size: 200px;
+    padding: 25px;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-app h1::selection{
+    background: black;
+    color: white;
+}
+.main-app p{
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: underline;
+    text-align: center;
+    background: white;
+}
+.main-app p::selection{
+    background: black;
+    color: white;
+}
+.contact{
+    display: flex;
+    margin: 25px;
+    justify-content: space-evenly;
+    font-size: 100px;
+    width: 100%;
+    color: black;
+}
+.contact a{
+    color: black;
+}
+.contact a:hover{
+    color: rgb(133, 133, 133);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+    .main-app{
+        height: 100vh;
+        background: url('https://media.giphy.com/media/NPH7DsTIbfvz7mdVKT/giphy.gif') no-repeat center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .main-app h1{
+        font-size: 50px;
+        padding: 25px;
+        
+    }
+    .main-app p{
+        font-weight: 600;
+        text-decoration: underline;
+        text-align: center;
+    }
+    
+    .contact{
+        display: flex;
+        margin: 25px;
+        justify-content: space-evenly;
+        font-size: 50px;
+        width: 100%;
+        color: black;
+    }
+    .contact a{
+        color: black;
+    }
+} 

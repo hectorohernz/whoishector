@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  render() {
+    return (
+      <main className="main-app">
+        <div>
+          <h1>Portfolio Coming Soon..</h1>
+          <p>Created By Hector Hernandez</p>
+        </div>
+        
+        <div className="contact">
+          <a href="https://github.com/hectorohernz" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/hector-hernandez-383444196" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+        </div>
+      </main>
+    )
+  }
 }
 
 export default App;
