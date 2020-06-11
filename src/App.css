@@ -1,76 +1,162 @@
 .main-app{
     height: 100vh;
-    background: white;
+}
+.intro{
+    height: 50vh;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
-.main-app h1{
-    font-size: 200px;
-    padding: 25px;
-    
-}
-
-.main-app h1::selection{
-    background: black;
-    color: white;
-}
-.main-app p{
-    font-weight: 600;
-    font-size: 25px;
-    text-decoration: underline;
+.intro--text{
+    padding-top: 25px;
+    font-size: 35px;
     text-align: center;
-    background: white;
+    font-weight: 200;
 }
-.main-app p::selection{
-    background: black;
-    color: white;
-}
-.contact{
-    display: flex;
-    margin: 25px;
-    justify-content: space-evenly;
-    font-size: 100px;
-    width: 100%;
-    color: black;
-}
-.contact a{
-    color: black;
-}
-.contact a:hover{
-    color: rgb(133, 133, 133);
+.intro--name{
+    margin: 25px 0px;
+    font-size: 50px;
 }
 
-@media screen and (max-device-width: 480px) and (orientation:portrait) {
-    .main-app{
-        height: 100vh;
-        background: url('https://media.giphy.com/media/NPH7DsTIbfvz7mdVKT/giphy.gif') no-repeat center;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
+.aboutme-container{
+    font-weight: 200;
+    line-height: 2em;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-right:3px white solid;
+    font-size: 50px;
+}
+
+.nav-icon{
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    font-size: 30px;
+    background: rgb(255, 255, 255);
+    padding:15px;
+    color: rgb(65, 65, 65);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+.nav{
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 000px;
+    left: -400px;
+    background: rgb(254, 254, 254);
+    animation: navappear 1.3s;
+    animation-fill-mode:forwards;
+    color: black;
+}
+
+@keyframes navappear{
+    0%{
+        left: -400px;
     }
-    .main-app h1{
-        font-size: 50px;
-        padding: 25px;
-        
+    100%{
+        left: 0px;
     }
-    .main-app p{
-        font-weight: 600;
-        text-decoration: underline;
-        text-align: center;
-    }
-    
-    .contact{
-        display: flex;
-        margin: 25px;
-        justify-content: space-evenly;
-        font-size: 50px;
-        width: 100%;
-        color: black;
-    }
-    .contact a{
-        color: black;
-    }
-} 
+}
+
+.nav-block-container{
+    list-style: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+
+.nav-block-container a{
+    color: black;
+    text-decoration: none;
+}
+.nav-block-container li:first-child{
+    grid-column: 1/span 3;
+    grid-row: 1/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: rgb(161, 161, 255);
+    cursor: pointer;
+}
+
+
+.nav-block-container li:nth-child(2){
+    grid-column: 4/span 3;
+    grid-row: 1/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: rgb(255, 220, 161);
+}
+
+.nav-block-container li:nth-child(3){
+    grid-column: 1/span 3;
+    grid-row: 3/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: rgb(255, 161, 161);
+}
+
+.nav-block-container li:nth-child(4){
+    grid-column: 4/span 3;
+    grid-row: 3/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: rgb(128, 206, 255);
+}
+
+.nav-block-container li:nth-child(5){
+    grid-column: 1/span 6;
+    grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: rgb(208, 155, 255);
+}
+.nav-block-container li:nth-child(6){
+    grid-column: 1/span 6;
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border: 5px black solid;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.second-about-container{
+
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 2em;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-top:3px white solid;
+    border-left:3px white solid;
+}
+.Portfilo{
+    padding-top: 100px;
+}
+.Portfilo h1{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}

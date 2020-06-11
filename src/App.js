@@ -1,19 +1,19 @@
 import React from 'react';
 import './App.css';
+import Intro from './components/Intro';
+import Nav from './components/Nav'
+import {Route, Switch} from 'react-router-dom';
+import Portfolio from './components/Portfolio';
 
 class App extends React.Component{
   render() {
     return (
       <main className="main-app">
-        <div>
-          <h1>Portfolio Coming Soon..</h1>
-          <p>Created By Hector Hernandez</p>
-        </div>
-        
-        <div className="contact">
-          <a href="https://github.com/hectorohernz" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/hector-hernandez-383444196" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
-        </div>
+        <Nav/>
+      <Switch>
+        <Route exact render={ () =>  <Intro/>} path="/"/>
+        <Route exact render={ () =>  <Portfolio />} path="/portfolio"/>
+      </Switch>
       </main>
     )
   }
