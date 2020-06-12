@@ -20,13 +20,13 @@ export default class Nav extends Component{
         let div;
         this.state.navActive ? 
            div = <nav className="nav">
-                <ul className="nav-block-container">
+                <ul className="nav-block-container"  onClick={this.noNav} >
                     <li><NavLink to="/" exact >Home</NavLink></li>
                     <li><NavLink to="/portfolio">Portfolio</NavLink></li>
                     <li>About Me</li>
                     <li>Contact Info</li>
                     <li>Graphic Design</li>
-                    <li onClick={this.noNav} ><i className="fas fa-times"></i></li>
+                    <li><i className="fas fa-times"></i></li>
                 </ul>
             </nav>
         : div = <></>
