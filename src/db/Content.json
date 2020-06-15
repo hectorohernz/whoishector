@@ -40,14 +40,14 @@
             "title": "Stand-Up",
             "link": "https://class-a-stand.netlify.app/",
             "description": "Created For Morning Stand Up for Coding Class. Small Project created in ReactJs",
-            "tags": []
+            "tags": ["ReactJs","CSS","Javascipt","HTML"]
         },
         {
             "id": 7,
             "title": "Tap Music",
             "link": "https://hectorohernz.github.io/rhythm/",
             "description": "Rhythm is a collection of two dimensional animations that are triggered by tapping on the color pads.",
-            "tags": []
+            "tags": ["ReactJs","CSS","Javascipt","HTML"]
         }
     ]
 }
