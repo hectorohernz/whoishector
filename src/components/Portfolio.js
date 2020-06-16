@@ -18,6 +18,7 @@ export default class Portfolio extends Component{
                         <div className="id-card" key={project.id}>
                             <h3>{project.title}</h3>
                             <a href={project.link} target="_blank" rel="noopener noreferrer">Project Link</a>
+                           
                             <p>{project.description}</p>
                             <h4>Technologies Used</h4>
                             <ul>
