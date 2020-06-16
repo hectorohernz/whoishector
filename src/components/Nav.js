@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom';
 
+
 export default class Nav extends Component{
     constructor(props){
         super(props);
@@ -10,6 +11,8 @@ export default class Nav extends Component{
         this.navAppear = this.navAppear.bind(this);
         this.noNav = this.noNav.bind(this);
     }
+    
+      
     navAppear(){
         this.setState({navActive:true});
     };

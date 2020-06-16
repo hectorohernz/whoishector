@@ -34,7 +34,7 @@
         },
         {
             "id": 5,
-            "title": "Remind - Grocery List Helper",
+            "title": "Remind",
             "link": "https://remind.netlify.app/",
             "description": "A Grocery Shopping List Apps Built With ReactJs",
             "tags": ["CSS","Javascipt","HTML"],
