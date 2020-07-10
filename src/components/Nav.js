@@ -28,7 +28,7 @@ export default class Nav extends Component{
                     <li><NavLink to="/portfolio">Portfolio</NavLink></li>
                     <li><NavLink to="/aboutme">About Me</NavLink></li>
                     <li><NavLink to="/contact">Contact Info</NavLink></li>
-                    <li><NavLink to="/graphic">Graphic Design</NavLink></li>
+                    <li></li>
                     <li><i className="fas fa-times"></i></li>
                 </ul>
             </nav>

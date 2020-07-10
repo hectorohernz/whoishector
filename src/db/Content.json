@@ -1,60 +1,13 @@
 {
     "projects": [
-        {
-            "id": 1,
-            "title": "Magic Mirror",
-            "link": "https://hectorohernz.github.io/magicmirror/",
-            "description": "Magic Mirror is a personal Weather and Time application.",
-            "tags": ["HTML","CSS","Javascipt"],
-            "img":"images/weather.png"
-        },
-        {
-            "id": 2,
-            "title": "Toby Time",
-            "link": "https://hectorohernz.github.io/toby-time/",
-            "description": "Created With Vanilla Javascript, CSS, and HTML",
-            "tags": ["HTML","CSS","Javascipt"],
-            "img":"images/toby.png"
-        },
-        {
-            "id": 3,
-            "title": "Harmony",
-            "link": "https://harmony-react.netlify.app/",
-            "description": "Harmony is an e-commerce store that sells vinyl records. Created with Create React App, React Router, and Scss.",
-            "tags": ["ReactJs","CSS","Javascipt","HTML"],
-            "img":"images/harmony.png"
-        },
-        {
-            "id": 4,
-            "title": "Crash Of Cards",
-            "link": "https://crashofcards.netlify.app/",
-            "description": "Crash Of Cards was a project created to practice working with APIs and React. ",
-            "tags": ["ReactJs","CSS","Javascipt","HTML"],
-            "img":"images/crashofcards.png"
-        },
-        {
-            "id": 5,
-            "title": "Remind",
-            "link": "https://remind.netlify.app/",
-            "description": "A Grocery Shopping List Apps Built With ReactJs",
-            "tags": ["CSS","Javascipt","HTML"],
-            "img":"images/remind.png"
-        },
-        {
-            "id": 6,
-            "title": "Stand-Up",
-            "link": "https://class-a-stand.netlify.app/",
-            "description": "Created For Morning Stand Up for Coding Class. Small Project created in ReactJs",
-            "tags": ["ReactJs","CSS","Javascipt","HTML"],
-            "img":"images/stand.png"
-        },
-        {
-            "id": 7,
-            "title": "Tap Music",
-            "link": "https://hectorohernz.github.io/rhythm/",
-            "description": "Rhythm is a collection of two dimensional animations that are triggered by tapping on the color pads.",
-            "tags": ["ReactJs","CSS","Javascipt","HTML"],
-            "img":"images/tap.png"
-        }
+    {
+        "id":1,
+        "title":"Tokyo",
+        "tech":["Semantic Html", "CSS", "Web Accessibllity"],
+        "description":"",
+        "github":"",
+        "link":"",
+        "date":""
+    }
     ]
 }

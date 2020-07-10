@@ -3,6 +3,7 @@ import data from '../db/Content.json';
 import { v4 as uuidv4 } from 'uuid';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import '../styles/main.css'
 
 export default class Portfolio extends Component{
     constructor(props){
@@ -20,30 +21,22 @@ export default class Portfolio extends Component{
     render() {
         return (
             <>
-              <section className="Portfilo">
-                <h1>Projects</h1>
-
-                <section className="card-container">
-                    {this.state.data.map( project => 
-                        <div className="id-card" key={project.id}  data-aos='zoom-in'>
-                            <div className="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <div className={`card-image card-image-${project.id}`}></div>
-                                    <h5>{project.title}</h5>
+              <section className="portfoilo">
+                   <article className="header-title" >
+                            <h1 data-aos="zoom-in">Portfoilo</h1>
+                            <img data-aos="zoom-in" src="https://images.unsplash.com/photo-1506287375451-bb850eba44d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" alt="computer-screen"/>
+                   </article>
+                   <div className="empty"></div>
+                   <section className="portfoilo-project-container">
+                                <div className="port-card">
+                                    <h3  data-aos="zoom-in">Tokyo</h3>
+                                    <img   data-aos="zoom-in" src="./images/tokyo.png" className="port-image" alt=""/>
+                                    <p  data-aos="zoom-in" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <a  data-aos="zoom-in"  href="/">Learn More About This Project
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                    </a>
                                 </div>
-                                <div className="flip-card-back">
-                                        <h3>{project.title}</h3>
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer">Project Link</a>
-                                        <p>{project.description}</p>
-                                        <h4>Technologies Used</h4>
-                                        <ul>
-                                            {project.tags.map(item => <li key={uuidv4()}>{item}</li>)}
-                                        </ul>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                </section>
+                   </section>
                </section>
             </>
         )

@@ -1,0 +1,154 @@
+.header-title {
+  height: 50vh;
+  background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 2px;
+}
+
+.header-title img {
+  z-index: 1;
+  position: absolute;
+  top: 250px;
+  height: 350px;
+  border-radius: 20px;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-box-shadow: 0 4px 20px -6px #222;
+          box-shadow: 0 4px 20px -6px #222;
+}
+
+.header-title h1 {
+  font-size: 70px;
+  margin-top: 120px;
+  z-index: 4;
+  font-weight: 500;
+  background: -webkit-linear-gradient(white, #6e6e6e);
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.empty {
+  height: 50vh;
+}
+
+.header-title img:hover {
+  cursor: crosshair;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.portfoilo-project-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+  .header-title img {
+    z-index: 1;
+    position: absolute;
+    top: 230px;
+    height: 500px;
+    border-radius: 20px;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    -webkit-box-shadow: 0 4px 20px -6px #222;
+            box-shadow: 0 4px 20px -6px #222;
+  }
+  .header-title h1 {
+    margin-top: 60px;
+    z-index: 4;
+    font-size: 200px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(white, #6e6e6e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .header-title img {
+    z-index: 1;
+    position: absolute;
+    top: 230px;
+    height: 500px;
+    border-radius: 20px;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    -webkit-box-shadow: 0 4px 20px -6px #222;
+            box-shadow: 0 4px 20px -6px #222;
+  }
+  .header-title h1 {
+    margin-top: 20px;
+    z-index: 4;
+    font-size: 290px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(white, #6e6e6e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.port-card {
+  height: 650px;
+  width: 90%;
+}
+
+.port-card h3 {
+  font-weight: 400;
+  font-size: 30px;
+  margin: 15px 0px;
+}
+
+.port-image {
+  width: 100%;
+  height: 200px;
+  margin: 15px 0px;
+}
+
+.port-card p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.port-card a {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 45px 0px;
+  text-decoration: none;
+  color: none;
+  font-size: 20px;
+  color: black;
+}
+
+.port-card i {
+  margin: 0px 15px;
+  font-size: 30px;
+  color: #ca0101;
+}
+/*# sourceMappingURL=main.css.map */

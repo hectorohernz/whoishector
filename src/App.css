@@ -1,37 +1,56 @@
-
 .intro{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0px 20px;
-    background: #383838;
 }
 .intro--text{
     padding-top: 25px;
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
     font-weight: 200;
-    color: #ffffff;
+    color: #000000;
 }
-.intro--name{
-    margin: 25px 0px;
-    font-size: 50px;
-    color: #ffffff;
-    border: none;
+.intro-about-me{
+    height: 80vh;
+    overflow: hidden;
+    padding: 0px 15px;
+    position: absolute ;
+}
+.intro-about-me p{
+    font-size: 35px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+.intro-about-me a{
+    display: flex;
+     justify-content: space-evenly;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 0px;
+    letter-spacing: .2px;
+    text-decoration: none;
+}
+.intro-about-me i{
+    font-size: 40px;
+    color: rgb(255, 78, 78);
 }
 
-.aboutme-container{
-    font-weight: 200;
-    line-height: 2em;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    border-right: 5px #e5e5e5  solid;
-    font-size: 40px;
-    border-bottom-right-radius:100px ;
+.intro-about-me img{
+    position: absolute ;
+    right: -150px;
+    height: 350px;
+    border-radius: 20px;
+    margin: 35px 0px;
 }
 
 .nav-icon{
+    z-index: 1000;
     position: fixed;
     top: -10px;
     left: -10px;
@@ -46,7 +65,7 @@
     z-index: 2;
 }
 .nav{
-    z-index: 5;
+    z-index: 1000;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -155,183 +174,6 @@
     cursor: pointer;
 }
 
-.second-about-container{
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 2em;
-    margin-left: 10px;
-    padding-left: 20px;
-    padding-top: 20px;
-    border-top:4px #e5e5e5  solid;
-    border-left: 2px #e5e5e5 solid;
-    background: #a1a1a1;
-    border-top-left-radius:100px ;
-    color:rgb(54, 54, 54);
-}
-
-.Portfilo{
-    background: #ffffff;
-    padding-top: 75px;
-    z-index: -1;
-    overflow: hidden;
-}
-.Portfilo h1{
-    font-size: 40px;
-    margin-left: 125px;
-    padding: 25px;
-    background: #dbdbdb;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    margin-bottom: 50px;
-    color: #000000;
-}
-
-.card-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.id-card{
-    height: 350px;
-    width: 240px;
-    background-color: transparent;
-    margin: 50px 50px;
-    padding: 5px 5px;
-    color: rgb(0, 0, 0);
-    perspective: 1000px;
-    border-radius: 20px;
-}
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.651);
-    border-radius: 20px;
-  }
-  
-  .id-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 20px;
-  }
-  
-  .flip-card-front {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    text-align: center;
-    
-  }
-
-  .flip-card-front h5{
-      font-size: 40px;
-      margin-top: 25px;
-      font-weight: 300;
-  }
-
-  .flip-card-back {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    transform: rotateY(180deg);
-  }
- /*  Id images*/
-  .card-image{
-    height: 250px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .card-image-1{
-      background: url('/images/weather.png');
-      background-size: cover;
-  }
-  .card-image-2{
-    background: url('/images/toby.png');
-    background-size: cover;
-  }
-
-  .card-image-3{
-    background: url('/images/harmony.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-  .card-image-4{
-    background: url('/images/crashofcards.png');
-    height: 250px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .card-image-5{
-    background: url('/images/remind.png');
-    height: 250px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-image-6{
-    background: url('/images/stand.png');
-    height: 250px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .card-image-7{
-    background: url('/images/tap.png');
-    height: 250px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-
-
-
-
-.id-card h3{
-    font-size: 25px;
-    font-weight: 600;
-    padding: 5px;
-    text-align: center;
-}
-.id-card p{
-    margin: 5px 0px;
-    padding: 0px 15px;
-    text-align: center;
-}
-.id-card a{
-    display: block;
-    color: black;
-    text-decoration: none;
-    padding: 5px 5px;
-    border-radius:25px ;
-    border:2px black solid;
-    margin: 25px auto;
-    width: 80px;
-    text-align: center;
-}
-
-.id-card a:hover{
-    background: rgb(180, 180, 180);
-}
-.id-card h4{
-    font-weight: 400;
-    padding-top: 25px;
-    padding-left: 25px;
-    text-decoration: underline;
-}
-.id-card ul{
-    padding-top: 5px;
-    padding-left: 45px;
-}
 
 
 
@@ -368,23 +210,71 @@
     border-radius: 25px;
 }
 @media screen and  (min-width: 800px) {
-    .intro{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px 60px;
-    }
-    .intro--text{
-        font-size: 50px;
-    }
-    .intro--name{
-        font-size: 100px;
-    }
+    
+.intro{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.intro--text{
+    padding-top: 25px;
+    font-size: 170px;
+    text-align: center;
+    font-weight: 200;
+    color: #000000;
+}
+
+.intro-about-me{
+    overflow: hidden;
+    width: 98%;
+    height: 50vh;
+    position: absolute;
+}
+.intro-about-me p{
+    font-size: 50px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 25px 0px;
+    padding-right: 200px;
+}
+
+.intro-about-me a{
+    display: flex;
+     justify-content: flex-end;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 35px;
+    margin: 100px 0px;
+    letter-spacing: .2px;
+    text-decoration: none;
+}
+.intro-about-me i{
+    font-size: 50px;
+    margin: 0px 15px;
+    color: rgb(255, 78, 78);
+}
+.intro-about-me img{
+    display: none;
+    position: absolute;
+    right: -500px;
+    height: 800px;
+    border-radius: 20px;
+    margin: 50px 0px;
+   
+}
+
+
     .nav-icon{
         font-size: 50px;
+        z-index: 1000;
     }
     .nav{
+        z-index: 1000;
         left: -1500px;
         background: rgb(254, 254, 254);
         animation: navappear 1s;
