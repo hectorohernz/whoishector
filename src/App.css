@@ -14,7 +14,7 @@
     color: #000000;
 }
 .intro-about-me{
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
     padding: 0px 15px;
     position: absolute ;
@@ -231,7 +231,7 @@
 .intro-about-me{
     overflow: hidden;
     width: 98%;
-    height: 50vh;
+    height: 70vh;
     position: absolute;
 }
 .intro-about-me p{

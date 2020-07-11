@@ -3,11 +3,22 @@
     {
         "id":1,
         "title":"Tokyo",
+        "image":"./images/tokyo.png",
         "tech":["Semantic Html", "CSS", "Web Accessibllity"],
-        "description":"",
-        "github":"",
-        "link":"",
-        "date":""
+        "description":"Tokyo is my first web development project. Project Tokyo is a city guide, but also contains the most popular Information Technology Companies In Tokyo. Created for Road To Hire Gateway.",
+        "github":"https://github.com/hectorohernz/gatewayproject",
+        "link":"https://hectorohernz.github.io/gatewayproject/index.html",
+        "date":"01-30-2020"
+    },
+    {
+        "id":2,
+        "title":"Magic Mirror",
+        "image":"./images/magicmirror.png",
+        "tech":["Vanilla Javascript","CSS","HTML","Json Axjax","Fetch","API","Web Accessibllity"],
+        "description":"Magic Mirror is an application created to help you know the current weather and time without having to switch to different websites. It's a convenient dashboard that is multi-purpose functionality. Magic Mirror was created with the help of different API, which offers a detailed weather forecast.",
+        "github":"https://github.com/hectorohernz/magicmirror",
+        "link":"https://hectorohernz.github.io/magicmirror/",
+        "date":"03-10-2020"
     }
     ]
 }
