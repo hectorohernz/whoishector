@@ -1,8 +1,11 @@
 .project-model-container{
-    z-index: 1;
-    position: absolute;
+    z-index: 100;
+    position: fixed;
     top: 0px;
     height: 100vh;
     width: 100%;
     background: white;
+}
+.project-model-container{
+    font-size: 205px;
 }

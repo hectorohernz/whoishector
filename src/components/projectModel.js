@@ -24,7 +24,10 @@ class Project extends Component{
         }
         return (
             <section className="project-model-container">
-                <h1>{this.props.match.params.projectId}</h1>
+                  <section className="soon">
+                    <h1>Sorry This Page Is Under Development.</h1>
+                    <NavLink to="/" exact >Go Back To Home</NavLink>
+                </section>
             </section>
         )
     }

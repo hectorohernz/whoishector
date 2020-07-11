@@ -18,6 +18,7 @@ class App extends React.Component{
         <Route  component={ Soon } path="/contact"/>
         <Route  component={ Soon } path="/graphic"/>
         <Route  component={Soon } path="/aboutme"/>
+        <Route  component={Soon } path="*"/>
       </Switch>
       </main>
       </Router>

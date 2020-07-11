@@ -153,12 +153,69 @@
   color: #ca0101;
 }
 
+@media screen and (min-width: 800px) {
+  .port-card {
+    height: 750px;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .port-card h3 {
+    font-weight: 700;
+    font-size: 50px;
+    margin: 15px 0px;
+  }
+  .port-image {
+    width: 500px;
+    height: 300px;
+    margin: 15px auto;
+  }
+  .port-card p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px 0px;
+  }
+  .port-card a {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 25px 0px;
+    text-decoration: none;
+    color: none;
+    font-size: 25px;
+    color: black;
+  }
+  .port-card i {
+    margin: 0px 15px;
+    font-size: 40px;
+    color: #ca0101;
+  }
+}
+
 .project-model-container {
-  z-index: 1;
-  position: absolute;
+  z-index: 100;
+  position: fixed;
   top: 0px;
   height: 100vh;
   width: 100%;
   background: white;
+}
+
+.project-model-container {
+  font-size: 205px;
 }
 /*# sourceMappingURL=main.css.map */

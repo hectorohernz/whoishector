@@ -38,7 +38,7 @@ export default class Portfolio extends Component {
                                 <h3 data-aos="zoom-in">{project.title}</h3>
                                 <img data-aos="zoom-in" src={project.image} className="port-image" alt={project.t} />
                                 <p data-aos="zoom-in" >{project.description}</p>
-                                <a data-aos="zoom-in" href="/">Learn More About This Project
+                                <a data-aos="zoom-in" href={`/portfolio/${project.id}`}>Learn More About This Project
                                           <i class="fas fa-long-arrow-alt-right"></i>
                                 </a>
                             </div>
