@@ -5,7 +5,8 @@ import Nav from './components/Nav'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import Soon from './components/Soon'
+import Soon from './components/Soon';
+import nonExist from './components/404';
 class App extends React.Component{
   render() {
     return (
@@ -18,7 +19,7 @@ class App extends React.Component{
         <Route  component={ Soon } path="/contact"/>
         <Route  component={ Soon } path="/graphic"/>
         <Route  component={Soon } path="/aboutme"/>
-        <Route  component={Soon } path="*"/>
+        <Route  component={nonExist } path="*"/>
       </Switch>
       </main>
       </Router>
