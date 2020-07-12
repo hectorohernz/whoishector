@@ -1,7 +1,9 @@
 .port-card{
     height: 650px;
-   
     width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .port-card h3{
     font-weight: 400;
@@ -9,7 +11,7 @@
     margin: 15px 0px;
 }
 .port-image{
-    width: 100%;
+    width: 325px;
     height: 200px;
     margin: 15px 0px;
 }
