@@ -16,7 +16,7 @@
 .intro-about-me{
     height: 100vh;
     overflow: hidden;
-    padding: 0px 15px;
+    padding: 0px 25px;
     position: absolute ;
 }
 .intro-about-me p{
@@ -256,16 +256,17 @@
 
 .intro-about-me{
     overflow: hidden;
-    width: 98%;
+    width: 95%;
     height: 70vh;
     position: absolute;
 }
 .intro-about-me p{
+  
     font-size: 50px;
     line-height: 1.5;
     font-weight: 600;
-    margin: 25px 0px;
-    padding-right: 200px;
+  padding-left: 30px;
+    padding-right: 100px;
 }
 
 .intro-about-me a{

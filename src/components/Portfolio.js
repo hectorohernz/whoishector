@@ -28,18 +28,17 @@ export default class Portfolio extends Component {
             <>
                 <section className="portfoilo">
                     <article className="header-title" >
-                        <h1 data-aos="zoom-in">Portfoilo</h1>
-                        <img data-aos="zoom-in" src="https://images.unsplash.com/photo-1506287375451-bb850eba44d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" alt="computer-screen" />
+                        <h1 >Portfoilo</h1>
+
                     </article>
-                    <div className="empty"></div>
                     <section className="portfoilo-project-container">
                         {this.state.data.map(project =>
-                            <div className="port-card">
-                                <h3 data-aos="zoom-in">{project.title}</h3>
-                                <img data-aos="zoom-in" src={project.image} className="port-image" alt={project.t} />
-                                <p data-aos="zoom-in" >{project.description}</p>
-                                <a data-aos="zoom-in" href={`/portfolio/${project.id}`}>Learn More About This Project
-                                          <i class="fas fa-long-arrow-alt-right"></i>
+                            <div className="port-card" key={uuidv4()} data-aos="zoom-in">
+                                <h3 >{project.title}</h3>
+                                <img  src={project.image} className="port-image" alt={project.t} />
+                              
+                                <a href={`/portfolio/${project.title.toLowerCase().split("").filter( letter => letter !== ' ').join('')}`}>Learn More About This Project
+                                          <i className="fas fa-long-arrow-alt-right"></i>
                                 </a>
                             </div>
                         )}

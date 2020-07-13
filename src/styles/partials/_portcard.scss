@@ -1,5 +1,5 @@
 .port-card{
-    height: 650px;
+    height: 500px;
     width: 90%;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@
 
 @media screen and  (min-width: 800px) {
     .port-card{
-        height: 750px;
+        height: 600px;
         width: 50%;
         display: flex;
         justify-content: center;
