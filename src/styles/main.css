@@ -251,7 +251,7 @@
 .project-model-description {
   font-size: 15px;
   line-height: 25px;
-  padding: 15px 25px;
+  padding: 35px 40px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-column: 1/span 8;
@@ -286,6 +286,11 @@
   border-radius: 10px;
 }
 
+.project-model-container-links a:hover {
+  background: black;
+  color: white;
+}
+
 .target-to-port {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,8 +300,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-row: 8;
-  grid-row: 8;
+  -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-column: 7;
   -ms-grid-column-span: 2;
   grid-column: 7/ span 2;
@@ -305,6 +310,8 @@
   background: black;
   color: white;
   border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  height: 80px;
 }
 
 .tech-list {
@@ -339,9 +346,8 @@
   font-size: 15px;
   background: black;
   color: white;
-  padding: 3px;
-  border-radius: 5px;
-  height: 100%;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 650px) {
@@ -358,17 +364,13 @@
     grid-column: 5/span 4;
     width: 80%;
   }
-  .project-model-container-links {
-    -ms-grid-row: 6;
-    grid-row: 6;
-  }
   .project-model-container-links a {
     font-size: 20px;
     height: 20px;
     padding: 10px;
     border-radius: 10px;
   }
-  .project-model-container p {
+  .project-model-description {
     -ms-grid-row: 2;
     -ms-grid-row-span: 3;
     grid-row: 2/ span 3;
@@ -379,9 +381,11 @@
     line-height: 30px;
   }
   .project-model-container-links {
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 8;
-    grid-column: 5/span 8;
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/span 5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -414,8 +418,9 @@
     -ms-grid-column: 5;
     -ms-grid-column-span: 6;
     grid-column: 5/span 6;
+    height: 80%;
   }
-  .project-model-container p {
+  .project-model-description {
     margin-top: 15px;
     -ms-grid-row: 2;
     -ms-grid-row-span: 3;
@@ -427,9 +432,11 @@
     line-height: 35px;
   }
   .project-model-container-links {
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 8;
-    grid-column: 5/span 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/span 4;
+    -ms-grid-row: 7;
+    grid-row: 7;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -445,6 +452,7 @@
     grid-column: 1/ span 4;
     -ms-grid-row: 6;
     grid-row: 6;
+    padding-left: 30px;
   }
   .tech-list h5 {
     font-size: 23px;
@@ -462,20 +470,7 @@
     padding-bottom: 5px;
   }
   .tech-tools {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px 15px;
-    background: black;
-    color: white;
-    margin: 0px 15px;
-    border-radius: 15px;
+    font-size: 15px;
   }
   .target-to-port {
     font-size: 30px;
@@ -483,8 +478,8 @@
 }
 
 @media screen and (min-width: 1300px) {
-  .project-model-container p {
-    margin-top: 15px;
+  .project-model-description {
+    margin-top: 40px;
     -ms-grid-row: 2;
     -ms-grid-row-span: 3;
     grid-row: 2/ span 3;
@@ -493,6 +488,18 @@
     grid-column: 1/ span 4;
     font-size: 30px;
     line-height: 35px;
+  }
+  .tech-tools {
+    font-size: 15px;
+  }
+  .project-model-container img {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 4;
+    grid-row: 3/ span 4;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 6;
+    grid-column: 5/span 6;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
