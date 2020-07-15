@@ -28,8 +28,8 @@ export default class Portfolio extends Component {
             <>
                 <section className="portfoilo">
                     <article className="header-title" >
-                        <h1 >Portfoilo</h1>
-
+                        <h1 data-aos='fade-in' >Portfoilo</h1>
+                       
                     </article>
                     <section className="portfoilo-project-container">
                         {this.state.data.map(project =>

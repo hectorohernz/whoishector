@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Soon from './components/Soon';
 import nonExist from './components/404';
+import aboutMe from './components/Aboutme';
 class App extends React.Component{
   render() {
     return (
@@ -18,7 +19,7 @@ class App extends React.Component{
         <Route  component={  Portfolio} path="/portfolio"/>
         <Route  component={ Soon } path="/contact"/>
         <Route  component={ Soon } path="/graphic"/>
-        <Route  component={Soon } path="/aboutme"/>
+        <Route  component={aboutMe } path="/aboutme"/>
         <Route  component={nonExist } path="*"/>
       </Switch>
       </main>
