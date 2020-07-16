@@ -23,6 +23,7 @@ export default class Portfolio extends Component {
         AOS.init({
             duration: 1000
         });
+        document.title = "Portfolio"
     }
 
     render() {

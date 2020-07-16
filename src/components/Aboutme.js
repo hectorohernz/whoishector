@@ -7,7 +7,8 @@ export default class AboutMe extends Component {
     componentDidMount() {
         AOS.init({
             duration: 2000
-        })
+        });
+        document.title = "About Hector Hernandez"
     }
 
     render() {

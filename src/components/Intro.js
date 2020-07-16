@@ -7,7 +7,8 @@ export default class Intro extends Component{
     componentDidMount(){
         AOS.init({
           duration : 2500
-        })
+        });
+        document.title = "Hector Hernandez"
       }
     render() {
         return (
