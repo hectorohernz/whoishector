@@ -17,7 +17,7 @@
     height: 100vh;
     overflow: hidden;
     padding: 0px 25px;
-    position: absolute ;
+    position: relative ;
 }
 .intro-about-me p{
     font-size: 35px;
@@ -211,7 +211,7 @@
 @media screen and  (min-width: 800px) {
 
 .nav-icon{
-    z-index: 1000;
+    z-index: 100;
     position: fixed;
     top: -10px;
     left: -10px;
@@ -258,7 +258,6 @@
     overflow: hidden;
     width: 95%;
     height: 70vh;
-    position: absolute;
 }
 .intro-about-me p{
   
@@ -298,7 +297,7 @@
 
     .nav-icon{
         font-size: 50px;
-        z-index: 1000;
+        z-index: 100;
     }
     .nav{
         z-index: 1000;

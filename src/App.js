@@ -8,21 +8,25 @@ import Contact from './components/Contact';
 import Soon from './components/Soon';
 import nonExist from './components/404';
 import aboutMe from './components/Aboutme';
+import Project from './components/projectModel';
+import Footer from './components/Footer';
+
 class App extends React.Component{
   render() {
     return (
       <Router>
+       <Nav/>
       <main className="main-app">
-        <Nav/>
       <Switch>
         <Route exact component={Intro} path="/"/>
         <Route  component={  Portfolio} path="/portfolio"/>
         <Route  component={ Soon } path="/contact"/>
         <Route  component={ Soon } path="/graphic"/>
         <Route  component={aboutMe } path="/aboutme"/>
-        <Route  component={nonExist } path="*"/>
+        <Route exact path="/:projectId" component={Project} />
       </Switch>
       </main>
+      <Footer/>
       </Router>
     )
   }

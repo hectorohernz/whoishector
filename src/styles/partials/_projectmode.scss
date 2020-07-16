@@ -1,44 +1,54 @@
 .project-model-container{
     z-index: 100;
-    position: fixed;
-    top: 0px;
+    width: 100%;   
+}
+
+.project-model-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    display: grid;
-    grid-template-rows: repeat(8,1fr);
-    grid-template-columns: repeat(8,1fr);
 }
 .project-model-container h2{
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 30px;
-    grid-row: 1;
-    grid-column:1/span 8;
+    font-size: 70px;   
     text-align: center;
-    margin-top: 25px;
+    font-weight: 300;
+   color: black;
+   margin-bottom: 10px;
 }
-.project-model-container img{
-height: 100%;
-width: 100%;
-grid-row: 2/span 2;
-grid-column:2/span 6;
-box-shadow: 0 4px 20px -6px #222;
-margin: auto;
+.project-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-model-description{
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 40px;
     padding: 35px 40px;
-    grid-column:1/span 8;
-    grid-row: 4 /span 2;
+    margin-left: 25px;
+    background: black;
+    color: white;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: 120px;
+}
+
+.project-model-container img{
+    height: 20vh;
+    width: 30vh;
+    grid-row: 2/span 2;
+    grid-column:2/span 6;
+    box-shadow: 0 4px 20px -6px #222;
+     margin: 0px auto;
+    margin-bottom: 120px;
 }
 .project-model-container-links{
-    grid-column:1/span 8;
     display: flex;
     justify-content: space-around;
     align-items: center;  
+    margin: 50px 0px;
 }
 .project-model-container-links a{
     display: block;
@@ -46,34 +56,35 @@ margin: auto;
     background: white;
     border: 2px black solid;
     text-decoration: none;
-    font-size: 15px;
-    height: 20px;
-    padding: 5px;
+    font-size: 18px;
+    padding: 8px;
     border-radius:10px;
+    font-weight:500;
+    cursor: crosshair;
 }
 .project-model-container-links a:hover{
    background: black;
    color: white;
 }
 .target-to-port{
+    z-index: 500;
     display: flex;
     padding-left: 15px;
-    margin-left: 10px;
     align-items: center;
-    grid-row: 1;
-    grid-column: 7/ span 2;
     font-size: 14px;
     text-decoration: none;
     background: black;
     color: white;
-    border-top-left-radius:50px ;
-    border-bottom-left-radius:50px ;
-    height: 80px;
-
+    height: 50px;
+    width: 120px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 .tech-list{
-    grid-column: 1/ span 8;
-    grid-row: 7;
+ margin: 50px 0px;
+padding-left: 35px;
+padding-right: 35px;
 }
 .tech-list h5{
     font-size: 15px;
@@ -81,125 +92,93 @@ margin: auto;
 }
 .carousel-tech{
     padding-top: 10px;
-    width: 100%;
-    height: 70%;
    display: flex;
    overflow-y: hidden;
    overflow-x: scroll;
    align-items: center;
+
 }
 .tech-tools{
   margin: 0px 20px;
-  font-size: 15px;
+  font-size: 18px;
  background: black;
  color: white;
  padding: 8px;
  border-radius: 10px;
 }
 
-@media screen and  (min-width: 650px) {
-   
+@media screen and (min-width:700px) {
     .project-model-container h2{
-        font-size: 50px;
+        font-size: 100px;   
     }
     .project-model-container img{
-        margin-top: 15px;
-        grid-row: 2/span 3;
-        grid-column:5/span 4;
-       width: 80%;
-    }
-
-    .project-model-container-links a{
-        font-size: 20px;
-        height: 20px;
-        padding: 10px;
-        border-radius:10px;
+        height: 30vh;
+        width: 50vh;
+        box-shadow: 0 4px 20px -6px #222;
+         margin: 0px auto;
+        margin-bottom: 120px;
+        cursor: crosshair;
     }
     .project-model-description{
-        grid-row: 2/ span 3;
-        grid-column: 1/ span 4;
-        font-size: 20px;
-        line-height: 30px;
+        margin-left: 200px;
     }
-    .project-model-container-links{
-        grid-row: 7;
-        grid-column: 1/span 5;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;  
-    }
-    .tech-list{
-        grid-column: 1/ span 4;
-        grid-row: 6;
+    .project-model-container-links a{
+        font-size: 20px;  
     }
     .target-to-port{
-        font-size: 20px;
+        height: 60px;
+        width: 120px;
     }
-
 }
-@media screen and  (min-width: 1000px) {
+
+@media screen and (min-width:1000px) {
     .project-model-container h2{
-        font-size: 70px;
+        font-size: 140px;   
     }
     .project-model-container img{
-        grid-row: 2/span 4;
-        grid-column:5/span 6;
-        height: 80%;
+        height: 40vh;
+        width: 70vh;
+        box-shadow: 0 4px 20px -6px #222;
+         margin: 0px auto;
+        margin-bottom: 120px;
+        transition: 1s ease;
     }
     .project-model-description{
-        margin-top: 15px;
-        grid-row: 2/ span 3;
-        grid-column: 1/ span 4;
+        margin-left: 200px;
         font-size: 25px;
-        line-height: 35px;
+        line-height: 50px;
     }
     .project-model-container-links{
-        grid-column:1/span 4;
-        grid-row: 7;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;  
+        margin-bottom: 200px;
     }
-    .tech-list{
-    grid-column: 1/ span 4;
-    grid-row: 6;
-   padding-left: 30px;
-}
-.tech-list h5{
-    font-size: 23px;
-    padding-left: 15px;
-}
-.carousel-tech{
-padding-top: 10px;
-    width: 100%;
-    height: 70%;
-   display: flex;
-   overflow-y: hidden;
-   overflow-x: scroll;
-   padding-bottom: 5px;
-}
-.tech-tools{
- font-size: 15px;
-}
-.target-to-port{
-    font-size: 30px;
-}
-}
-@media screen and  (min-width: 1300px) {
-    .project-model-description{
-        margin-top:40px;
-        grid-row: 2/ span 3;
-        grid-column: 1/ span 4;
+    .project-model-container-links a{
+        font-size: 30px;  
+    
+    }
+    .target-to-port{
+        font-size: 25px;
+        text-align: center;
+        height: 80px;
+        width: 220px;
+    }
+    .tech-list h5{
         font-size: 30px;
-        line-height: 50px;
-        font-weight: 300;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        text-align: center;
     }
-    .tech-tools{
-        font-size: 15px;
+    .carousel-tech{
+        padding-top: 10px;
+       display: flex;
+       overflow-y: hidden;
+       overflow-x: scroll;
+       align-items: center;
+       justify-content: center;
+       overflow: hidden;
     }
-    .project-model-container img{
-        grid-row: 3/ span 4;
-        grid-column: 5/span 6;
-        height: 100%;
+    
+    .project-model-container img:hover{
+        transform: scale(1.4);
+        transition: 1s ease;
     }
 }

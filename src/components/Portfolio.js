@@ -6,9 +6,11 @@ import 'aos/dist/aos.css';
 import '../styles/main.css'
 import {
     Switch,
-    Route
+    Route,
+    Link,
+    useHistory
 } from "react-router-dom";
-import Project  from './projectModel';
+import Project from './projectModel';
 
 export default class Portfolio extends Component {
     constructor(props) {
@@ -20,7 +22,7 @@ export default class Portfolio extends Component {
     componentDidMount() {
         AOS.init({
             duration: 1000
-        })
+        });
     }
 
     render() {
@@ -29,25 +31,19 @@ export default class Portfolio extends Component {
                 <section className="portfoilo">
                     <article className="header-title" >
                         <h1 data-aos='fade-in' >Portfoilo</h1>
-                       
                     </article>
                     <section className="portfoilo-project-container">
                         {this.state.data.map(project =>
                             <div className="port-card" key={uuidv4()} data-aos="zoom-in">
                                 <h3 >{project.title}</h3>
-                                <img  src={project.image} className="port-image" alt={project.t} />
-                              
-                                <a href={`/portfolio/${project.title.toLowerCase().split("").filter( letter => letter !== ' ').join('')}`}>Learn More About This Project
-                                          <i className="fas fa-long-arrow-alt-right"></i>
+                                <img src={project.image} className="port-image" alt={project.title} />
+
+                                <a href={`/${project.title.toLowerCase().split("").filter(letter => letter !== ' ').join('')}`}>Learn More About This Project
+                              <i className="fas fa-long-arrow-alt-right"></i>
                                 </a>
                             </div>
                         )}
                     </section>
-                    <Switch>
-                        <Route exact path={`/portfolio/:projectId`}>
-                            <Project/>
-                        </Route>
-                    </Switch>
                 </section>
             </>
         )

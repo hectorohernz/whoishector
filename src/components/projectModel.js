@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter, NavLink, Redirect } from "react-router-dom";
+import { withRouter, Link, Redirect } from "react-router-dom";
 import {projects} from '../db/Content.json';
 
 class Project extends Component{
@@ -25,8 +25,14 @@ class Project extends Component{
             <section className="project-model-container">
                 {this.state.item.map(project => 
                 <>
-                <img src={"." + project.image} alt={project.title}/>
+                <div className='project-model-header'>
                 <h2>{project.title}</h2>
+                <p>{project.date}</p>
+                </div>
+                <div className="project-content">
+           
+                <img src={"." + project.image} alt={project.title}/>
+                
                 <p className="project-model-description">{project.description}</p>
                 <div className="project-model-container-links">
                     <a href={project.link} target="_blank">Live Demo</a>
@@ -40,7 +46,8 @@ class Project extends Component{
                         )}
                     </div>
                 </div>
-                <a href="/portfolio" className='target-to-port'>Back To Portfiolo</a>
+                </div>
+                <Link to="/portfolio" className='target-to-port'>Back To Portfiolo</Link>
                 </>
                         )}
             </section>
