@@ -47,7 +47,7 @@
             "description": "Crash Of Cards is a game created with the help of ReactJs and https://deckofcardsapi.com/. This application was created with the sole purpose of understanding the ReactJs library. ",
             "github": "https://github.com/hectorohernz/CrashOfCards",
             "link": "https://crashofcards.netlify.app/",
-            "date": "03-10-2020"
+            "date": "04-20-2020"
         },
         {
             "id": 4,
@@ -65,7 +65,77 @@
             "description": "Instagram Redesign is a full stack application utilizing the MongoDB, ReactJs, Express, and NodeJs. This application was created with the sole purpose of redesign and restore a fresh new design to Instagram.",
             "github": "https://github.com/hectorohernz/instagram",
             "link": "https://glacial-refuge-25064.herokuapp.com/",
-            "date": "06-10-2020"
+            "date": "07-10-2020"
+        },
+        {
+            "id": 5,
+            "title": "Remind",
+            "image": "./images/remind.png",
+            "tech": [
+                "Responsive Design with Css",
+                "ReactJs"
+            ],
+            "description": "Grocery List Helper. It was created with the help of Create React App. Javascript Framework.",
+            "github": "https://github.com/hectorohernz/Remind",
+            "link": "https://remind.netlify.app/",
+            "date": "06-15-2020"
+        }
+        ,
+        {
+            "id": 6,
+            "title": "Toby Time",
+            "image": "./images/tobytime.png",
+            "tech": [
+                "Responsive Design with Css",
+                "Vanilla Javascript",
+                "HTML"
+            ],
+            "description": "I love assigning myself projects when learning something new. This was one of my first projects utilizing Vanilla Javascript. ",
+            "github": "https://github.com/hectorohernz/toby-time",
+            "link": "https://hectorohernz.github.io/toby-time/",
+            "date": "03-15-2020"
+        },
+        {
+            "id": 7,
+            "title": "Stand Up",
+            "image": "./images/standup.png",
+            "tech": [
+                "ReactJs",
+                "JSX"
+            ],
+            "description": "Stand Up is an application meant to solve the issues with a stand-up meeting with larger groups.",
+            "github": "https://github.com/hectorohernz/Stand-up",
+            "link": "https://class-a-stand.netlify.app/",
+            "date": "05-15-2020"
+        }
+        ,
+        {
+            "id": 8,
+            "title": "Rhythm",
+            "image": "./images/tap.png",
+            "tech": [
+                "Responsive Design with Css",
+                "Vanilla Javascript",
+                "HTML"
+            ],
+            "description": "Rhythm is a collection of two dimensional animations that are triggered by tapping on the color pads. This small project was inspired by Patatap.com.",
+            "link": "https://hectorohernz.github.io/rhythm/",
+            "github": "https://github.com/hectorohernz/rhythm",
+            "date": "05-15-2020"
+        }
+        ,
+        {
+            "id": 9,
+            "title": "Harmony",
+            "image": "./images/harmony.png",
+            "tech": [ 
+                "Responsive Design with Css",
+                "ReactJs"
+            ],
+            "description": "Harmony is an e-commerce store that sells vinyl records. From modern to vintage music. The application was created to create a React app. A framework created by Facebook. So the website is made up of smaller components, which allows for better user experience. ",
+            "link": "https://harmony-react.netlify.app/",
+            "github": "https://github.com/hectorohernz/harmony-react",
+            "date": "03-15-2020"
         }
     ]
 }
