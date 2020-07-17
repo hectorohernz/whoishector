@@ -79,8 +79,7 @@
             "github": "https://github.com/hectorohernz/Remind",
             "link": "https://remind.netlify.app/",
             "date": "06-15-2020"
-        }
-        ,
+        },
         {
             "id": 6,
             "title": "Toby Time",
@@ -107,8 +106,7 @@
             "github": "https://github.com/hectorohernz/Stand-up",
             "link": "https://class-a-stand.netlify.app/",
             "date": "05-15-2020"
-        }
-        ,
+        },
         {
             "id": 8,
             "title": "Rhythm",
@@ -122,13 +120,12 @@
             "link": "https://hectorohernz.github.io/rhythm/",
             "github": "https://github.com/hectorohernz/rhythm",
             "date": "05-15-2020"
-        }
-        ,
+        },
         {
             "id": 9,
             "title": "Harmony",
             "image": "./images/harmony.png",
-            "tech": [ 
+            "tech": [
                 "Responsive Design with Css",
                 "ReactJs"
             ],
@@ -136,6 +133,46 @@
             "link": "https://harmony-react.netlify.app/",
             "github": "https://github.com/hectorohernz/harmony-react",
             "date": "03-15-2020"
+        },
+        {
+            "id": 10 ,
+            "title": "Speech Recognization",
+            "image": "./images/guess.png",
+            "tech": [
+                "Responsive Design with Css",
+                "Vanilla Javascript",
+                "HTML"
+            ],
+            "description": "Speech Recognization is an application that utilizes a Voice Recognition Api.   ",
+            "link": "https://hectorohernz.github.io/speech-recognization/",
+            "github": "https://github.com/hectorohernz/speech-recognization",
+            "date": "03-2020"
+        },
+        {
+            "id": 11 ,
+            "title": "Tic Tac Toe",
+            "image": "./images/tick-toe.png",
+            "tech": [
+                "ReactJs"
+            ],
+            "description": "Tic Tac Toe is an application that utilizes a Create React App.",
+            "link": "https://trusting-franklin-33240e.netlify.app/",
+            "github": "https://github.com/hectorohernz/Tic-Tac-Toe",
+            "date": "04-2020"
+        },
+        {
+            "id": 12 ,
+            "title": "Github Cards",
+            "image": "./images/githubcards.png",
+            "tech": [
+                "ReactJs",
+                "Axios",
+                "Json Axjax"
+            ],
+            "description": "Github Cards is an application that utilizes a Create React App.",
+            "link": "https://jolly-panini-c6b93a.netlify.app/",
+            "github": "https://github.com/hectorohernz/github-cards",
+            "date": "04-2020"
         }
     ]
 }
