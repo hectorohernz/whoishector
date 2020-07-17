@@ -1,0 +1,48 @@
+.contact-page-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-page-container h1{
+     margin:100px 0px;
+     font-size: 50px;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+}
+.text-container{
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin: 25px 0px;
+    height: 30px;
+    width: 100%;
+    border: 0px ;
+    outline: none;
+    border-bottom: 2px dashed black;
+    
+}
+
+.text-area{
+    font-family: 'Muli', sans-serif;
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin: 25px 0px;
+    height: 100px;
+    width: 100%;
+    border: 0px ;
+    outline: none;
+    border-bottom: 2px dashed black;
+}
+.form-container [type="submit"]{
+    width: 100%;
+    padding:  10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    border: none;
+}
