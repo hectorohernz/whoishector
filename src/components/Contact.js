@@ -6,7 +6,7 @@ export default class contact extends Component {
             <>
                 <section className="contact-page-container">
                     <h1>Contact Me</h1>
-                    <form name="contact" className="form-container"  method='post'>
+                    <form name="contact" className="form-container"  method='/graphic'>
                         <input type="hidden"  name="form-name" value="contact" />
                         <input type="text"  placeholder="Full Name" className="text-container" name="name" />
                         <input type="email"  placeholder="Email" className="text-container" name="email" />
