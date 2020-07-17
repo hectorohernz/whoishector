@@ -39,6 +39,69 @@
     opacity: .7;
   }
 
+.skills-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+
+}
+
+.skill-para{
+  line-height:2em;
+  font-size: 20px;
+padding: 25px;
+}
+.skills-container h1{
+  font-size:35px;
+ text-align: center;
+ padding-bottom: 5px;
+ margin: 0px auto;
+ border-bottom: 2px solid black;
+ margin-bottom: 50px;
+ 
+}
+.skills-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.single-skills{
+  margin:15px 0px;
+}
+.single-skills i{
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.javascript-icon{
+  color: rgb(204, 103, 9);
+}
+
+.react-icon{
+  color:rgb(0, 140, 255);
+}
+.node-js-icon{
+  color:green;
+}
+.npm-js-icon{
+  color: red;
+}
+.css-icon{
+  color: rgb(45, 98, 214);
+}
+.html5-icon{
+  color: rgb(255, 123, 0);
+}
+.sass-icon{
+  color: rgb(251, 130, 255);
+}
+.database-icon{
+  color: rgb(45, 98, 214);
+
+}
   @media screen and (min-width:900px){
     .about-me-title h1{
       font-size: 100px;
@@ -66,6 +129,47 @@
     opacity: .7;
     margin-top: 30px;
   }
+  .skills-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skills-container h1{
+    font-size:35px;
+   text-align: center;
+   padding-bottom: 5px;
+   margin: 0px auto;
+   border-bottom: 2px solid black;
+   margin-bottom: 50px;
+   
+  }
+  .skills-list{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+  }
+  .single-skills{
+    margin:25px 50px;
+
+  }
+  .single-skills i{
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .single-skills p{
+    font-size: 30px;
+    margin-bottom: 5px;
+  
+  }
+
+  .skill-para{
+    line-height:2em;
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+  }
 
   }
   @media screen and (min-width:1200px){
@@ -85,7 +189,7 @@
   .about-content-container p{
     line-height:2em;
     font-size: 25px;
-  padding: 25px;
+  padding: px;
   }
   .about-content-container img{
     height: 300px;
@@ -95,6 +199,13 @@
     opacity: .7;
     margin-top: 30px;
   }
+  .skill-para{
+    line-height:2em;
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+  }
+
 
   }
   @media screen and (min-width:1200px){
@@ -114,7 +225,7 @@
   .about-content-container p{
     line-height:2em;
     font-size: 30px;
-  padding: 25px;
+  padding: 40px;
   }
   .about-content-container img{
     height: 400px;

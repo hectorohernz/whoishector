@@ -17,7 +17,7 @@ export default class Intro extends Component{
                <h1 className="intro--text">Who Is Hector Hernandez</h1>
             </section>
             <section className="intro-about-me">
-                <p  data-aos="fade-right" >A Software Engineer, who is passionate about the future of technology and Graphic Design.</p>
+                <p  data-aos="fade-right" >A Full Stack Software developer, who is passionate about the future of technology and Graphic Design.</p>
                 <a href="/portfolio" data-aos="fade-right">Click Here To View Projects <i class="fas fa-long-arrow-alt-right"></i></a>
                 <img  data-aos="fade-left" src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="Programming Image"/>
             </section>
