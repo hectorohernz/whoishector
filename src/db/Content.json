@@ -174,5 +174,24 @@
             "github": "https://github.com/hectorohernz/github-cards",
             "date": "04-2020"
         }
+        ,
+        {
+            "id": 12 ,
+            "title": "Kin",
+            "image": "./images/kin.png",
+            "tech": [
+                "Responsive Design with Css",
+                "NodeJs",
+                "ReactJs",
+                "Mongodb",
+                "Jsx",
+                "Json Axjax",
+                "Full Stack Application"
+            ],
+            "description": "Kin is a full stack application utilizing the MongoDB, ReactJs, Express, and NodeJs. This application was created for learning purpose of learning the MERN Stack.",
+            "link": "https://jolly-panini-c6b93a.netlify.app/",
+            "github": "https://github.com/hectorohernz/github-cards",
+            "date": "08-2020"
+        }
     ]
 }
