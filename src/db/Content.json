@@ -189,8 +189,8 @@
                 "Full Stack Application"
             ],
             "description": "Kin is a full stack application utilizing the MongoDB, ReactJs, Express, and NodeJs. This application was created for learning purpose of learning the MERN Stack.",
-            "link": "https://jolly-panini-c6b93a.netlify.app/",
-            "github": "https://github.com/hectorohernz/github-cards",
+            "link": "https://sleepy-sierra-28891.herokuapp.com/",
+            "github": "https://github.com/hectorohernz/chatlog",
             "date": "08-2020"
         }
     ]
