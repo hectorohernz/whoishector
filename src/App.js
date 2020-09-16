@@ -11,6 +11,7 @@ import aboutMe from './components/Aboutme';
 import Project from './components/projectModel';
 import Footer from './components/Footer';
 
+
 class App extends React.Component{
   render() {
     return (
@@ -19,7 +20,7 @@ class App extends React.Component{
       <main className="main-app">
       <Switch>
         <Route exact component={Intro} path="/"/>
-        <Route  component={  Portfolio} path="/portfolio"/>
+        <Route  component={  nonExist} path="/portfolio"/>
         <Route  component={ Contact } path="/contact"/>
         <Route  component={ Soon } path="/graphic"/>
         <Route  component={aboutMe } path="/aboutme"/>

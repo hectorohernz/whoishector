@@ -4,6 +4,8 @@ import { v4 as uuidv4 } from 'uuid';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/main.css'
+
+
 import {
     Switch,
     Route,

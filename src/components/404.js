@@ -6,7 +6,7 @@ export default class nonExist extends Component{
         return (
             <>
                 <section className="soon">
-                    <h1>Sorry The Page You Looking For Doesn't Exist</h1>
+                    <h1>Sorry The Page You Looking For Is Under Maintenance</h1>
                     <NavLink to="/" exact >Go Back To Home</NavLink>
                 </section>
             </>
