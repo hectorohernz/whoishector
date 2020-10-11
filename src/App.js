@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Intro from './components/Intro';
-import Nav from './components/Nav'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
@@ -10,13 +9,13 @@ import nonExist from './components/404';
 import aboutMe from './components/Aboutme';
 import Project from './components/projectModel';
 import Footer from './components/Footer';
-
+import PlineNav from './pipeline-1/Nav';
 
 class App extends React.Component{
   render() {
     return (
       <Router>
-       <Nav/>
+     <PlineNav/>
       <main className="main-app">
       <Switch>
         <Route exact component={Intro} path="/"/>

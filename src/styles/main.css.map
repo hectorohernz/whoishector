@@ -8,7 +8,8 @@
         "partials/_projectmode.scss",
         "partials/_aboutme.scss",
         "partials/_footer.scss",
-        "partials/_contact.scss"
+        "partials/_contact.scss",
+        "partials/_nav.scss"
     ],
     "names": [],
     "file": "main.css"
