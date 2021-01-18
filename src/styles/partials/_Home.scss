@@ -1,0 +1,122 @@
+// Edit Iphone 6/7/8
+
+
+.home{
+    padding: 0px 15px;
+
+    .quote{
+        font-size: 10px;
+        line-height: 1.5rem;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    @media screen and (min-width : 375px ){
+        .quote{
+            font-size: 15px;
+            line-height: 2rem;
+            padding: 0px;
+            text-align: center;
+        }
+        padding: 20px 30px;
+        
+    }
+    @media screen and (min-width: 700px) {
+        .quote{
+            font-size: 15px;
+            line-height: 2.5rem;
+            padding: 0px;
+            text-align: center;
+        }
+    }
+    
+}
+.home--title{
+
+    padding: 25px 0px;
+    :first-child, h1, h2{
+        padding: 5px 0px;
+    }
+
+    h1{
+        font-weight: bold;
+    }
+    
+    h2{
+        font-size: 17px;
+        font-weight: normal;
+    }
+    @media screen and (min-width : 375px ){
+        h1{
+            font-size: 2rem;
+        }
+        :first-child, h2{ 
+            font-size: 1.3rem;
+        }
+      }
+      @media screen and (min-width : 700px ){
+        h1{
+            padding: 1.5rem 0rem;
+            font-size: 3rem;
+        }
+        :first-child, h2{ 
+            font-size: 1.5rem;
+        }
+      }
+}
+
+.home--description{
+   p{
+        padding: 20px 0px;
+        line-height: 2.3rem;
+    }
+    @media screen and (min-width : 375px ){
+            p{
+                font-size: 1.2rem;
+                line-height: 3rem;
+            }
+    }
+    @media screen and (min-width : 700px ){
+        p{
+            font-size: 1.5rem;
+            line-height: 4rem;
+        }
+}
+}
+
+.home--links{
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    li{
+        list-style: none;
+        margin: 20px 0px;
+        font-size: 15px;
+        a{
+            color: rgb(90, 90, 90);
+            text-decoration: none;
+        }
+    }
+    padding:20px 0px;
+
+    @media screen and (min-width : 375px ){
+        a{
+            font-size: 1.3rem;
+        }
+    }
+    @media screen and (min-width : 375px ){
+       h3{
+           font-size: 2rem;
+           padding: .5rem 0px;
+       }
+
+       a{
+           font-size: 1.5rem;
+       }
+       ul{
+           padding: 1rem 0rem;
+       }
+    }
+}
