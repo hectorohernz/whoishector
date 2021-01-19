@@ -1,1 +1,39 @@
 @import "./partials/Home";
+
+.notfound {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+
+
+  a {
+    text-decoration: none;
+    color:black;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+
+.iframe {
+  height: 350px;
+  width: 500px;
+}
+
+
+.iframe iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media screen and (min-width:0px) and (max-width:1000px) {
+  .iframe {
+    height: 25%;
+    width: 250px;
+  }
+}
