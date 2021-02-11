@@ -9,7 +9,9 @@ class NotFound extends Component {
           <p>But since your here, enjoy some good music. Updated weekly</p>
           <div className="iframe">
             <iframe
-              src="https://www.youtube.com/embed/u5CVsCnxyXg"
+            title="Pixes Live"
+            aria-label="Pixes Live Via Youtube"
+              src="https://www.youtube.com/embed/I_aBmrYChfQ"
             ></iframe>
           </div>
           <a href="/">Go Back Home</a>

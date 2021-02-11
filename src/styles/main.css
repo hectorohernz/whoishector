@@ -34,30 +34,30 @@
   padding: 25px 0px;
 }
 
-.home--title :first-child, .home--title h1, .home--title h2 {
+.home--title :first-child, .home--title h2, .home--title h3 {
   padding: 5px 0px;
 }
 
-.home--title h1 {
+.home--title h2 {
   font-weight: bold;
 }
 
-.home--title h2 {
+.home--title h3 {
   font-size: 17px;
   font-weight: normal;
 }
 
 @media screen and (min-width: 375px) {
-  .home--title h1 {
+  .home--title h2 {
     font-size: 2rem;
   }
-  .home--title :first-child, .home--title h2 {
+  .home--title :first-child, .home--title h3 {
     font-size: 1.3rem;
   }
 }
 
 @media screen and (min-width: 700px) {
-  .home--title h1 {
+  .home--title h2 {
     padding: 1.5rem 0rem;
     font-size: 3rem;
   }
